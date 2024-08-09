@@ -34,7 +34,6 @@ export const BankHolidays = () => {
         <div className="divisions">
         <h2>Divisions:</h2>
         <select
-            value={selectedDivision}
             onChange={(e) => handleDropdownChange(e.target.value)}
         >
             <option value="default" style={{color:"gray"}}>Select Division</option>
