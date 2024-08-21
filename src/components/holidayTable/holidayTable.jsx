@@ -1,6 +1,7 @@
-export const EventsTable = ({ events }) => {
+export const HolidayTable = (props) => {
     return (
-      <table>
+      <div>
+      <table title="table">
         <thead>
           <tr>
             <th>Date</th>
@@ -10,7 +11,7 @@ export const EventsTable = ({ events }) => {
           </tr>
         </thead>
         <tbody>
-          {events.map((event, index) => (
+          {props.holidays?.map((event, index) => (
             <tr key={index}>
               <td>{event.date}</td>
               <td>{event.title}</td>
@@ -20,5 +21,6 @@ export const EventsTable = ({ events }) => {
           ))}
         </tbody>
       </table>
+      </div>
     );
   };
